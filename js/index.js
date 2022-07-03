@@ -1,17 +1,31 @@
 'use strict';
 
-let x;
-let y;
+// Functions:
 
-x = parseInt(prompt("Enter the first number"));
-y = parseInt(prompt("Enter the second number"));
+function addAndLogToConsole(a, b) {
+    console.log(a + " + " + b + " = " + (a + b));
+}
 
-let a = x+y;
-let b = x-y;
-let c = x*y;
-let d = x/y;
+function subAndLogToConsole(a, b) {
+    console.log(a + " - " + b + " = " + (a - b));
+}
 
-alert("The sum of given numbers is: " + a);
-alert("The difference of given numbers is: " + b);
-alert("The product of given numbers is: " + c);
-alert("The quotient of given numbers is: " + d);
+function multAndLogToConsole(a, b) {
+    console.log(a + " * " + b + " = " + (a * b));
+}
+
+function divAndLogToConsole(a, b) {
+    console.log(a + " / " + b + " = " + (a / b));
+}
+
+// Main program:
+
+let x = parseInt(prompt("Enter the first number"));
+let y = parseInt(prompt("Enter the second number"));
+
+// To use functions please uncomment below 4 lines
+
+// addAndLogToConsole(x, y);
+// subAndLogToConsole(x, y);
+// multAndLogToConsole(x, y);
+// divAndLogToConsole(x, y);
